@@ -1,7 +1,7 @@
 @import "bootstrap.min.css";
 
 body {
-  font-size: 62.5%;
+  font-size: 100%;
   background: white;
 }
 
@@ -32,22 +32,48 @@ li a:hover {
     background-color: #111;
 }
 
+
+/*
+---------------------
+F O N T  S T Y L E S
+---------------------
+*/
+
+
+/* section header */
 h1 {color: Black;
-  font-family: 'futura-pt-condensed', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 24px;
 }
 
-h2, h3 {
-  font-family: 'futura-pt-condensed', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 1.7em;
-  font-weight: 400;
+/*story hed*/
+h2 {color: Black;
+  font-family: "futura-pt-condensed", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+
 }
 
+/*story dek*/
+h3 { color: Gray;
+  font-family: "futura-pt-condensed", sans-serif;
+  font-size: 26px;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
 
-p {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 16px;
+/*byline*/
+h4 {color: Black;
+  font-family: "futura-pt", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+p {color: Black;
+  font-family: "Georgia", serif;
+  font-size: 1.5em;
   line-height: 22px;
 }
 
@@ -73,7 +99,7 @@ float:left;
 padding:10px 5px 15px 20px;
 color: #034575;
 text-align:justify;
-font-family: Georgia
+font-family: "futura-pt-condensed",sans-serif;
 }
 
 .primary-nav ul {
