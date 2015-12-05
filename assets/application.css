@@ -90,7 +90,7 @@ h4 {color: Black;
 
 /*publish time and date*/
 h5 {color:gray;
-  font-family: "futura-pt," sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-size: 10px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -129,7 +129,6 @@ p {color: Black;
     margin-left : -0.1em;
   }
 
-}
 
 
 /*
