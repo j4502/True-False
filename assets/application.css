@@ -1,31 +1,135 @@
 @import "bootstrap.min.css";
 
 body {
-  font-size: 62.5%;
-background: white;
+  font-size: 75%;
+  line-height: 1.6875;
+  font-family:"futura-pt", sans-serif;
 }
+html>body {
+  font-size: 16px;
+}
+
 
 ul {
-  list-style:none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-h1 {color: Black;
-  font-family: 'Futura', 'Helvetica Neue', Arial, sans-serif;
+nav li {
+    float: left;
+    font-size: 3em;
+    color: white;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+
+/*
+---------------------
+F O N T  S T Y L E S
+---------------------
+*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+
+/* section header */
+h1 {color: #c1272d;
+  font-family: "futura-pt-condensed", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+/*story hed*/
+h2 {color: Black;
+  font-family: "futura-pt-condensed", sans-serif;
+  font-size: 36px;
   font-weight: 700;
-  font-size: 2.4em;
+  line-height: 50px;
+  margin-bottom: 4px;
+  text-align:left;
+
 }
 
-h2, h3 {
-  font-family: 'Futura', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 1.7em;
+/*story dek*/
+h3 { color: Gray;
+  font-family: "futura-pt", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  margin-bottom: 5px;
+  text-align:left;
+  line-height: 1.3;
+}
+
+/*byline*/
+h4 {color: Black;
+  font-family: "futura-pt", sans-serif;
+  font-size: 20px;
   font-weight: 400;
+  margin-top: 0;
 }
 
+/*publish time and date*/
+h5 {color:gray;
+  font-family: "futura-pt", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 3em;
 
-p {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 1.75em;
 }
+
+/*story hed - list style*/
+h6 { color: Black;
+  font-family: "futura-pt", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  margin-bottom: 5px;
+  text-align:left;
+  line-height: 1.3;
+}
+
+p {color: Black;
+  font-family: "chaparral-pro", serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  text-align:left;
+}
+  .firstLetter{
+    float       : left;
+    font-size   : 3.26em;
+    line-height : 0.5;
+    margin      : 0.205em 0.153em 0 0;
+  }
+
+  .firstLetter + span{
+    margin-left : -0.1em;
+  }
+
+
 
 /*
 ----------------------------------------------------------------
@@ -49,7 +153,7 @@ float:left;
 padding:10px 5px 15px 20px;
 color: #034575;
 text-align:justify;
-font-family: Georgia
+font-family: "futura-pt-condensed",sans-serif;
 }
 
 .primary-nav ul {
@@ -61,3 +165,99 @@ font-family: Georgia
   list-style: none;
   text-align:center;
   }
+
+.sub-menu {
+     display:none;
+}
+
+.dropdown-menu:hover .sub-menu {
+      display:block;
+
+}
+
+.sub-menu li {
+     display:block;
+     float:left;
+     width:100%;
+}
+
+  #navbar {
+       margin:0;
+       padding: 0;
+    }
+
+    #navbar ul {
+       margin: 0;
+       padding: 0;
+
+    }
+
+    #navbar ul li a {
+       color: white;
+       text-align: center;
+       text-decoration: none;
+       display: block;
+    }
+
+
+    ul.rig {
+    	list-style: none;
+    	font-size: 0px;
+    	margin-left: -2.5%; /* should match li left margin */
+    }
+    ul.rig li {
+    	display: inline-block;
+    	padding: 10px;
+    	margin: 0 0 2.5% 2.5%;
+    	background: #fff;
+    	border: 1px solid #ddd;
+    	font-size: 16px;
+    	font-size: 1rem;
+    	vertical-align: top;
+    	box-shadow: 0 0 5px #ddd;
+    	box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+    	-webkit-box-sizing: border-box;
+    }
+    ul.rig li img {
+    	max-width: 100%;
+    	height: auto;
+    	margin: 0 0 10px;
+    }
+    ul.rig li h3 {
+    	margin: 0 0 5px;
+    }
+    ul.rig li p {
+    	font-size: .9em;
+    	line-height: 1.5em;
+    	color: #999;
+    }
+    /* class for 2 columns */
+    ul.rig.columns-2 li {
+    	width: 47.5%; /* this value + 2.5 should = 50% */
+    }
+    /* class for 3 columns */
+    ul.rig.columns-3 li {
+    	width: 30.83%; /* this value + 2.5 should = 33% */
+    }
+    /* class for 4 columns */
+    ul.rig.columns-4 li {
+    	width: 22.5%; /* this value + 2.5 should = 25% */
+    }
+
+    @media (max-width: 480px) {
+    	ul.grid-nav li {
+    		display: block;
+    		margin: 0 0 5px;
+    	}
+    	ul.grid-nav li a {
+    		display: block;
+    	}
+    	ul.rig {
+    		margin-left: 0;
+    	}
+    	ul.rig li {
+    		width: 100% !important; /* over-ride all li styles */
+    		margin: 0 0 20px;
+    	}
+    }
