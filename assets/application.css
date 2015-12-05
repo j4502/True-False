@@ -98,6 +98,17 @@ h5 {color:gray;
 
 }
 
+/*story hed - list style*/
+h6 { color: Black;
+  font-family: "futura-pt", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  margin-bottom: 5px;
+  text-align:left;
+  line-height: 1.3;
+}
+
 p {color: Black;
   font-family: "chaparral-pro", serif;
   font-weight: 400;
