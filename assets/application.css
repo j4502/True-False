@@ -168,7 +168,7 @@ font-family: "futura-pt-condensed",sans-serif;
      display:none;
 }
 
-.dropdown-menu:hover .sub-menu {
+.primary-menu:hover .sub-menu {
       display:block;
 
 }
