@@ -38,6 +38,7 @@ li a:hover {
 }
 
 
+
 /*
 ---------------------
 F O N T  S T Y L E S
@@ -129,6 +130,9 @@ p {color: Black;
     margin-left : -0.1em;
   }
 
+  .no-wrap-text {
+      overflow: hidden;
+  }
 
 
 /*
