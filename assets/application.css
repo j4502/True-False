@@ -24,7 +24,7 @@ html>body {
 
 #main-nav .navbar-toggle:hover,
 #main-nav .navbar-toggle:focus {
-  background-color: #FFFFFF;
+  background-color: #c1272d;
   border-color: #333;
 }
 
@@ -144,10 +144,13 @@ p {color: Black;
 
   .logo {
   padding: 0;
-  margin-top: 10px;
-  max-width: 200px;
+  margin-top: 0;
+  max-width: 100px;
   }
 
+.navbar-brand {
+
+}
 
 /*
 ----------------------------------------------------------------
