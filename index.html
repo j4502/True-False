@@ -10,64 +10,137 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/application.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <!--Adobe TypeKit-->
     <script src="https://use.typekit.net/nil2otq.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" href="css/application.css">
+
    </head>
 
 <body>
 
-  <div id="navbar">
-  <ul class="dropdown-menu">
-           <li class="primary-menu col-xs-3"><a href="index.html">Menu</a>
-           <ul class="sub-menu">
-              <li><a href="films.html">Film</a></li>
-              <li><a href="food.html">Food</a></li>
-              <li><a href="musicarts.html">Music and Arts</a></li>
-              <li><a href="maps.html">Maps</a></li>
-              <li><a href="photos.html">Photos</a></li>
-           </ul>
-           </li>
-           <li class="active col-xs-6"><a href="index.html"><img title="Vox Magazine and Columbia Missourian True/False Film Fest Coverage" src="assets/nav/Logo-01.svg" alt="Vox Magazine and Columbia Missourian True/False Film Fest Coverage" ></a></li>
-           <li class="col-xs-3"><a href="maps.html"><img title="Map" src="assets/nav/nav-map-11.svg" alt="Map" width=50></a></li>
+<nav id="main-nav" class="navbar navbar-default navbar-static">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        MENU
+      </button>
 
-  </ul>
-  </div>
-
-<div class="container-fluid full-width">
-     <h1>True/False Film Fest 2015</h1>
-  <div class="row">
-    <div class="col-xs-8">
-      <img title="True/False Film Fest 2015" src="assets/images/true-false-logo.jpeg" alt="True/False Film Fest 2015">
+      <a class="navbar-left" href="maps.html">
+        <img title="Maps" src="assets/nav/nav-map-11.svg" width="40" alt="Maps">
+      </a>
     </div>
-      <div class="col-xs-4">
-        <h2>Featured Stories</h2>
-          <ul>
-            <li><a href="content.html">True/False Film Review: The Act of Killing (Directors Cut)</a><span> VoxMag 6 hours ago</span></li>
-            <li>True/False Film Review: Cartel Land<span> VoxMag 1 day ago</span></li>
-            <li>True/False Film Review: Of Men and War<span> VoxMag 2 days ago</span></li>
+
+      <a class="logo" href="index.html">
+        <img title="Vox Magazine and Columbia Missourian True/False Film Fest Coverage" src="assets/nav/Logo-01.svg" alt="Vox Magazine and Columbia Missourian True/False Film Fest Coverage" width="200">
+      </a>
+
+
+    <div class="collapsed navbar-collapse bs-example-js-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li id="fat-menu" class="dropdown">
+          <a id="drop1" href="Films.html" class="nav-item dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"> Films <span class="caret"></span> </a>
+          </li>
+          <li class="dropdown">
+            <a id="drop2" href="food.html" class="nav-item dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"> Food <span class="caret"></span> </a>
+            </li>
+          <li class="dropdown">
+            <a id="drop3" href="musicarts.html" class="nav-item dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"> Music and Arts <span class="caret"></span> </a>
+            </li>
+          <li class="dropdown">
+            <a id="drop4" href="maps.html" class="nav-item dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"> Maps <span class="caret"></span> </a>
+            </li>
+          <li class="dropdown">
+            <a id="drop5" href="photos.html" class="nav-item dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"> Photos <span class="caret"></span> </a>
+            </li>
           </ul>
       </div>
-    </div>
+      </div>
+    </nav>
+
+<div class="container-fluid full-width">
+     <h1>Featured Stories</h1>
+
+     <div class="row">
+       <div class="col-xs-6">
+         <img title="The Act of Killing" src="assets/images/the-act-of-killing.jpg" alt="Act of Killing">
+       </div>
+       <div class="col-x-6">
+         <div class="no-wrap-text">
+         <h6><a href="content.html">True/False Film Review: The Act of Killing (Directors Cut)</a></h6>
+         <h4>By Christine Jackson</h4>
+       </div>
+     </div>
    </div>
+</div>
+<hr>
 <div class="container-fluid full-width">
   <div class="row">
-    <div class="col-xs-8">
-      <img title="Photo courtesy of University of Missouri System/Flickr" src="assets/images/true-false-stage.jpg" alt="Stage">
+    <div class="col-xs-6">
+      <img title="Photo courtesy of University of Missouri System/Flickr" src="assets/images/true-false-stage.jpg" alt="Stage" >
     </div>
-    <div class="col-x-4">
-      <h2>The insider’s guide to True/False</h2>
+    <div class="col-x-6">
+      <div class="no-wrap-text">
+      <h6>The insider’s guide to True/False</h6>
+      <h4>By Ryan Williamson</h4>
     </div>
   </div>
+</div>
+</div>
+<hr>
+<div class="container-fluid full-width">
 <div class="row">
-  <div class="col-xs-8">
+  <div class="col-xs-6">
     <img title="Lilly's Cantina employs a Baja Midwest fusion cooking style when preparing tacos" src="assets/images/lilly's-cantina.jpg" alt="Lilly's Cantina">
   </div>
-<div class="col-xs-4">
- <h2>True/False food trucks: Let the good food roll</h2>
+<div class="col-xs-6">
+  <div class="no-wrap-text">
+ <h6>True/False food trucks: Let the good food roll</h6>
+ <h4>By Meredith McGrath</h4>
  </div>
 </div>
 </div>
+</div>
+<hr>
 
+<div class="container-fluid full-width">
+     <h1>Most Recent</h1>
+<hr>
+
+     <div class="row">
+       <div class="col-xs-6">
+             <img title="Strangled Darlings" src="assets/images/strangleddarlings.jpg" alt="Strangled Darlings Band">
+       </div>
+       <div class="col-x-6">
+         <div class="no-wrap-text">
+         <h6>True/False Music: Thursday’s Toast/False Busker Showcase</h6>
+         <h4>By Abby Kass</h4>
+       </div>
+     </div>
+     </div>
+   </div>
+<hr>
+<div class="container-fluid full-width">
+     <div class="row">
+       <div class="col-xs-6">
+             <img title="Of Men and War" src="assets/images/of-men-and-war.jpg" alt="Of Men and War Production Still">
+       </div>
+       <div class="col-x-6">
+         <div class="no-wrap-text">
+         <h6>True/False Film Review: Of Men and War</h6>
+         <h4>By Seth Klamann</h4>
+       </div>
+     </div>
+     </div>
+   </div>
+<hr>
+<div class="container-fluid full-width">
+     <h1>Social</h1>
+<hr>
+
+</div>
 </body>
 </html>

@@ -9,33 +9,42 @@ html>body {
   font-size: 16px;
 }
 
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+.navbar {
+  background-color: #333;
 }
 
-nav li {
-    float: left;
-    font-size: 3em;
-    color: white;
+#main-nav .nav-item {
+  color: #FFFFFF;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.navbar-toggle {
+  color: #FFFFFF;
+  border: none;
+}
+
+#main-nav .navbar-toggle:hover,
+#main-nav .navbar-toggle:focus {
+  background-color: #c1272d;
+  border-color: #333;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.navbar-collapse {
+  display: none;
+}
+
+.navbar-collapse[aria-expanded="true"] {
+  display: block;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
 }
+
 
 
 /*
@@ -129,7 +138,19 @@ p {color: Black;
     margin-left : -0.1em;
   }
 
+  .no-wrap-text {
+      overflow: hidden;
+  }
 
+  .logo {
+  padding: 0;
+  margin-top: 0;
+  max-width: 100px;
+  }
+
+.navbar-brand {
+
+}
 
 /*
 ----------------------------------------------------------------
@@ -148,9 +169,7 @@ svg {
 #mainsection{
 margin-left: 20px;
 margin-top:15px;
-width:650px;
 float:left;
-padding:10px 5px 15px 20px;
 color: #034575;
 text-align:justify;
 font-family: "futura-pt-condensed",sans-serif;
@@ -170,7 +189,7 @@ font-family: "futura-pt-condensed",sans-serif;
      display:none;
 }
 
-.dropdown-menu:hover .sub-menu {
+.primary-menu:hover .sub-menu {
       display:block;
 
 }
@@ -245,7 +264,7 @@ font-family: "futura-pt-condensed",sans-serif;
     	width: 22.5%; /* this value + 2.5 should = 25% */
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 780px) {
     	ul.grid-nav li {
     		display: block;
     		margin: 0 0 5px;

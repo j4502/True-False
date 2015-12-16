@@ -11,7 +11,8 @@
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" href="assets/application.css">
-
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script src="assets/js/bootstrap.min.js"></script>
      <!--Adobe TypeKit-->
      <script src="https://use.typekit.net/nil2otq.js"></script>
      <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -20,19 +21,49 @@
 
 <body>
 
-<nav>
-  <ul>
-    <li>Menu</li>
-    <li><img title="Vox Magazine and Columbia Missourian True/False Film Fest Coverage" src="assets/nav/Logo-01.svg" alt="Vox Magazine and Columbia Missourian True/False Film Fest Coverage" width="380" height="100"></li>
-    <li><a href="maps.html"><img title="Map" src="assets/nav/nav-map-11.svg" alt="Map" width=50></a></li>
-  </ul>
-</nav>
+  <nav id="main-nav" class="navbar navbar-default navbar-static">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          MENU
+        </button>
+
+        <a class="navbar-left" href="maps.html">
+          <img title="Maps" src="assets/nav/nav-map-11.svg" width="40" alt="Maps">
+        </a>
+      </div>
+
+        <a class="logo" href="index.html">
+          <img title="Vox Magazine and Columbia Missourian True/False Film Fest Coverage" src="assets/nav/Logo-01.svg" alt="Vox Magazine and Columbia Missourian True/False Film Fest Coverage" width="200">
+        </a>
+
+
+      <div class="collapsed navbar-collapse bs-example-js-navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li id="fat-menu" class="dropdown">
+            <a id="drop1" href="Films.html" class="nav-item dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"> Films <span class="caret"></span> </a>
+            </li>
+            <li class="dropdown">
+              <a id="drop2" href="food.html" class="nav-item dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"> Food <span class="caret"></span> </a>
+              </li>
+            <li class="dropdown">
+              <a id="drop3" href="musicarts.html" class="nav-item dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"> Music and Arts <span class="caret"></span> </a>
+              </li>
+            <li class="dropdown">
+              <a id="drop4" href="maps.html" class="nav-item dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"> Maps <span class="caret"></span> </a>
+              </li>
+            <li class="dropdown">
+              <a id="drop5" href="photos.html" class="nav-item dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"> Photos <span class="caret"></span> </a>
+              </li>
+            </ul>
+        </div>
+        </div>
+      </nav>
 
   <h1>Films</h1>
 <div>
-  <div class="container-fluid">
     <img title="The Act of Killing" src="assets/images/the-act-of-killing.jpg" alt="The Act of Killing Production Still">
-  </div>
 </div>
 
 
@@ -52,11 +83,30 @@
 
     <p>It’s moments where Congo acknowledges the harm he’s caused to his fellow man and addresses it that make this film so successful. When he finally breaks down and speaks directly to Oppenheimer about how he treated his victims, you almost feel sympathy for the man before remembering the atrocities he’s committed.</p>
 
-    <p>Oppenheimer noted that The Act of Killing is a film about “impunity today, not a genocide 50 years ago.” That fact that the consequences of Congo’s (and his fellow perpetrator’s) actions are so internal makes the human rights themes in the film even more apparent. The smiling grandfather that we follow through five years of footage also played a part in a genocide that claimed the lives of a million innocent people.</p> </div><!--this is the end of mainsection-->
+    <p>Oppenheimer noted that The Act of Killing is a film about “impunity today, not a genocide 50 years ago.” That fact that the consequences of Congo’s (and his fellow perpetrator’s) actions are so internal makes the human rights themes in the film even more apparent. The smiling grandfather that we follow through five years of footage also played a part in a genocide that claimed the lives of a million innocent people.</p>
 
-    <p>The Act of Killing helped start and is a part of a much larger conversation about how lies shape a perceived truth, and the consequences of that truth being allowed. </p>
+    <p>The Act of Killing helped start and is a part of a much larger conversation about how lies shape a perceived truth, and the consequences of that truth being allowed. </p> </div><!--this is the end of mainsection-->
   </div>
 <!--this is the end of mainsection-->
+
+<hr>
+<div class="container-fluid full-width">
+     <h1>Related Stories</h1>
+<hr>
+
+  <div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-6">
+          <img title="Of Men and War" src="assets/images/of-men-and-war.jpg" alt="Of Men and War Production Still">
+        </div>
+        <div class="col-xs-6">
+          <h6>True/False Film Review: Of Men and War</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
