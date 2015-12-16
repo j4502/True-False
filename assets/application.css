@@ -9,28 +9,29 @@ html>body {
   font-size: 16px;
 }
 
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+.navbar {
+  background-color: #333;
 }
 
-nav li {
-    float: left;
-    font-size: 3em;
-    color: white;
+#main-nav .nav-item {
+  color: #FFFFFF;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.navbar-toggle {
+  color: #FFFFFF;
+  border: none;
 }
+
+#main-nav .navbar-toggle:hover,
+#main-nav .navbar-toggle:focus {
+  background-color: #FFFFFF;
+  border-color: #333;
+}
+
+ul li {
+  list-style-type: none;
+}
+
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
@@ -132,6 +133,12 @@ p {color: Black;
 
   .no-wrap-text {
       overflow: hidden;
+  }
+
+  .logo {
+  padding: 0;
+  margin-top: 10px;
+  max-width: 200px;
   }
 
 
@@ -247,7 +254,7 @@ font-family: "futura-pt-condensed",sans-serif;
     	width: 22.5%; /* this value + 2.5 should = 25% */
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 780px) {
     	ul.grid-nav li {
     		display: block;
     		margin: 0 0 5px;
