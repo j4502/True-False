@@ -32,6 +32,13 @@ ul li {
   list-style-type: none;
 }
 
+.navbar-collapse {
+  display: none;
+}
+
+.navbar-collapse[aria-expanded="true"] {
+  display: block;
+}
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
